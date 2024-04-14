@@ -8,4 +8,4 @@ COPY package.json /usr/server/
 RUN npm install 
 # Bundle app source
 COPY . /usr/server/
-CMD ["npm", "run", "pm2:start", "4"]
+CMD ["npm", "start"]

@@ -1,14 +1,18 @@
 version: "3"
 services:
   pcatw-homework-backend:
-    image: pcatw-homework-backend
-    expose:
-      - 3000
+    image: pcatw-homework-backend:1.0
     ports:
       - 3000:3000
+    environment:
+      - NODE_ENV=QAS
+    networks:
+      - backend
   redis:
     image: redis
-    expose:
-      - 6379
     ports:
       - 6379:6379
+    networks:
+      - backend
+networks:
+  backend:

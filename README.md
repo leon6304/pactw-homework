@@ -43,6 +43,9 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
+# pm2
+$ npm run pm2:start -i
 ```
 
 ## Test
